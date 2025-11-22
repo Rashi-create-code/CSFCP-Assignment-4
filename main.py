@@ -19,10 +19,12 @@ def calc():
             break
         print("Enter a valid number.")
 
-    if op == "+": print(a+b)
-    elif op == "-": print(a-b)
-    elif op == "*": print(a*b)
-    elif op == "/": print(a/b if b!=0 else "Divide by zero")
+    print("\n--- RESULT ---")
+    if op == "+": print(f"{a} + {b} = {a+b}")
+    elif op == "-": print(f"{a} - {b} = {a-b}")
+    elif op == "*": print(f"{a} * {b} = {a*b}")
+    elif op == "/":
+        print(f"{a} / {b} = {a/b}" if b != 0 else "Cannot divide by zero")
 
 if __name__ == "__main__":
     calc()
