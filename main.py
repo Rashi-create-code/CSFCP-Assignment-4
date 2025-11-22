@@ -1,8 +1,21 @@
 # calculator.py
 def calc():
-    a = float(input("Num1: "))
+    while True:
+        num1 = input("Num1: ")
+        if num1.replace('.', '', 1).isdigit():
+            a = float(num1)
+            break
+        print("Enter a valid number.")
+
     op = input("Operator (+,-,*,/): ")
-    b = float(input("Num2: "))
+
+    while True:
+        num2 = input("Num2: ")
+        if num2.replace('.', '', 1).isdigit():
+            b = float(num2)
+            break
+        print("Enter a valid number.")
+
     if op == "+": print(a+b)
     elif op == "-": print(a-b)
     elif op == "*": print(a*b)
@@ -11,3 +24,4 @@ def calc():
 
 if __name__ == "__main__":
     calc()
+
