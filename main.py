@@ -8,6 +8,9 @@ def calc():
         print("Enter a valid number.")
 
     op = input("Operator (+,-,*,/): ")
+    if op not in ["+", "-", "*", "/"]:
+        print("Invalid operator")
+        return
 
     while True:
         num2 = input("Num2: ")
@@ -20,8 +23,6 @@ def calc():
     elif op == "-": print(a-b)
     elif op == "*": print(a*b)
     elif op == "/": print(a/b if b!=0 else "Divide by zero")
-    else: print("Unknown operator")
 
 if __name__ == "__main__":
     calc()
-
