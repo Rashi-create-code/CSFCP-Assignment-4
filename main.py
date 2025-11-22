@@ -26,5 +26,11 @@ def calc():
     elif op == "/":
         print(f"{a} / {b} = {a/b}" if b != 0 else "Cannot divide by zero")
 
+# Loop wrapper
 if __name__ == "__main__":
-    calc()
+    while True:
+        calc()
+        again = input("\nDo another calculation? (y/n): ").lower()
+        if again != "y":
+            print("Goodbye!")
+            break
