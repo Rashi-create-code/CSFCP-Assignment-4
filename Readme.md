@@ -1,5 +1,4 @@
 # CSFCP-Assignment-4
-Here is a **short, clean, simple version** of all the sections you asked for — perfect for a compact README.
 
 ---
 
